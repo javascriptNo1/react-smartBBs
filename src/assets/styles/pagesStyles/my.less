@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+@import "../baseStyles/baseValue";
+
+//个人中心的样式
+.my{
+  .my-content{
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+  //{/*头像和信息*/}
+    .headbox{
+      height: 80px;
+      background-color: #fff8c4;
+      padding: 8px 20px;
+      position: relative;
+      //用户头像
+      &>img{
+        width: 70px;
+        float: left;
+        margin-right: 10px;
+      }
+      //用户名称
+      span:nth-child(2){
+        color: #000;
+        font-weight: bold;
+      }
+      //积分和图标
+      .imgtext{
+        margin-top: 10px;
+        display: inline-block;
+        text-indent: 25px;
+        background-size: 20px 30px ;
+        background-image: url("../../images/Personal_06.jpg");
+        background-repeat: no-repeat;
+      }
+      //积分值
+      span:nth-child(5){
+        color: @color18;
+        margin: 0px 10px;
+      }
+      //签到状态
+      span:nth-child(6){
+        background-color: #c9c9c9;
+        padding: 2px 6px;
+        border-radius: 8px;
+        color: @colorfff;
+
+      }
+      //箭头
+      a:last-child{
+        color: #000;
+        font-size: 24px;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+      }
+    }
+
+    //账户信息
+    .g-avg-3{
+      text-align: center;
+      .col{
+        color: #00000082;
+        background-color: @colorfff;
+        border-right: 2px solid #f5f5f5;
+        //图标
+        img{
+          width: 38px;
+          float: left;
+        }
+
+      }
+    }
+
+    //功能列表
+    .fslist{
+      list-style: none;
+      margin-top: 10px;
+      background-color: @colorfff;
+      padding-left: 20px;
+      li{
+        color: #00000082;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 2px solid #f5f5f5;
+        img{
+          width: 30px;
+          padding-bottom: 5px;
+        }
+        span{
+          margin-left: 10px;
+        }
+        .switch{
+          float: right;
+          right: -10px;
+          padding-left: 10px;
+          padding-bottom: 4px;
+          color: @color18;
+        }
+        .icon{
+          padding-top: 12px;
+          font-size: 18px;
+          float: right;
+          margin-right: 20px;
+        }
+      }
+      li:last-child{
+        border: none;
+      }
+
+    }
+  }
+
+
+}

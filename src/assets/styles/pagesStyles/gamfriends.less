@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+@import "../baseStyles/baseValue";
+
+//社交-好友的页面样式
+.gan-fr{
+
+  //内容导航栏
+  .g-avg-3{
+    background-color: @colorfff;
+    text-align: center;
+    height: 60px;
+    margin-bottom: 15px;
+    //单个样式
+    .col{
+      color: @color18;
+      font-size: 14px;
+      //图片
+      img{
+        width: 40px;
+      }
+    }
+
+    //因为第一张图片没切好所有移动一下位置
+    .col:first-child{
+      img{
+        margin-left: 5px;
+      }
+    }
+  }
+
+  //内容部分
+  .contentminbox{
+    height: 60px;
+    font-size: 14px;
+    background-color: @colorfff;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+
+    img{
+      float: left;
+      width: 50px;
+    }
+  }
+}

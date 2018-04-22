@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+@import "../baseStyles/baseValue";
+
+//添加页面样式
+.addto{
+  height: 100%;
+  background-color: #f5f5f5;
+
+  //搜索框
+  .seach{
+    //放大镜图标
+    margin: 15px 0px;
+    height: 65px;
+    padding-top: 10px;
+    background-color: @colorfff;
+    .icon{
+      font-size: 20px;
+      color: @color18;
+      padding-left: 30px;
+      padding-top: 10px;
+    }
+    //输入框
+    input{
+      margin-left: 0px;
+      padding-right: 20px;
+    }
+  }
+  //列表
+  .list{
+    position: relative;
+    padding-top: 5px;
+    margin: 0;
+
+    .item{
+      border: none;
+      height: 48px;
+      padding: 10px 10px;
+      text-align: left;
+      margin-bottom: 3px;
+      .item-title{
+        color: @color18;
+      }
+      .item-subtitle{
+        margin-top: 0px;
+        color: #00000075;
+      }
+      //图片
+      img{
+        width: 50px;
+      }
+    }
+
+    //箭头
+    &>span{
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      color: #c9c9c9;
+      font-size: 20px;
+    }
+  }
+
+  .list:last-child{
+    margin-top: 20px;
+  }
+}

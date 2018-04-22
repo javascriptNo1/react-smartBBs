@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+@import "../baseStyles/baseValue";
+
+//我的二维码内容部分
+.qrcode{
+  background-color: #0000008c;
+
+  //中间的盒子
+  .content-box{
+    height: 380px;
+    background-color: @colorfff;
+    width: 70%;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 8px;
+    padding: 0px 6%;
+    //头部信息
+    //头像
+    .headimg{
+      margin-top: 20px;
+      &>img{
+        height:60px;
+        float: left;
+      }
+      //图标
+      span{
+        img{
+          width: 70px;
+          margin-top: 10px;
+        }
+      }
+    }
+    //底部文字
+    .footertext{
+      text-align: center;
+      margin-top: 6px;
+    }
+  }
+}

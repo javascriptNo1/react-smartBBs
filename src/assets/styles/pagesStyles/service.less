@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+@import "../baseStyles/baseValue";
+
+.service{
+  background-color: @colorfff;
+  //标题
+  .contenth2{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 9px;
+  }
+
+  //政府服务列表
+  .govtList{
+
+    padding: 0px;
+    list-style: none;
+    //margin: 0px;
+    margin-bottom: 40px;
+    .col{
+      float: left;
+      width: 24.8%;
+      //height: 108px;
+      border-bottom: 1px solid #c9c9c9;
+      border-right: 1px solid #c9c9c9;
+      padding-bottom: 4%;
+      a{
+        span{
+          color: #000;
+        }
+      }
+    }
+    .col:nth-child(4),.col:nth-child(8){
+      border-right: none;
+    }
+
+    }
+  }
+
+  //生活列表的处理
+  .govtList:nth-child(5) {
+    .col:nth-last-child(1), .col:nth-last-child(2), .col:nth-last-child(3) {
+      border-bottom: none;
+
+    }
+
+  }
+
+  //底部的控制台
+  .footer{
+    height: 40px;
+    //border-top: 1px solid #c9c9c9;
+  }
+

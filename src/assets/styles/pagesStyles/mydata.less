@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+@import "../baseStyles/baseValue";
+
+//我的资料
+.mydata{
+  //功能列表
+  .fslist{
+    list-style: none;
+    margin-top: 10px;
+    background-color: @colorfff;
+    padding-left: 20px;
+    a{
+      span{
+        color: #000;
+      }
+    }
+    li{
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 2px solid #f5f5f5;
+      a{
+        span{
+          color: #000;
+        }
+      }
+      img{
+        width: 30px;
+        padding-bottom: 5px;
+      }
+
+      .switch{
+        float: right;
+        line-height: 36px;
+        img{
+          margin-top: 3px;
+          width: 22px;
+        }
+      }
+      .arrow{
+        padding-top: 8px;
+        font-size: 18px;
+        float: right;
+        margin-right: 20px;
+      }
+    }
+    li:last-child{
+      border: none;
+    }
+
+  }
+
+  //退出按钮
+  .but{
+    width: 90%;
+    margin: 0px auto;
+    .formbutton.black{
+      background-color: #ff000091;
+      margin-top: 100px;
+    }
+
+  }
+}

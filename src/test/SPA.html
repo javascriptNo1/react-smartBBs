@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul>
+  <li>
+    <a href="#Homepage">购物</a>
+  </li>
+  <li>
+    <a href="#Servicepage">服务</a>
+  </li>
+</ul>
+<div id="view">
+
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script>
+
+
+  window.addEventListener('hashChange',function(){
+    console.log('aa');
+  });
+
+
+  window.onhashchange=function(){
+    var hash=location.hash.substr(1);
+
+    var pash='http://localhost:8000/test/'+hash+'.html';
+
+    // var pash='http://localhost:8000/';
+
+    $('#view').load(pash);
+  };
+</script>
+
+</body>
+</html>

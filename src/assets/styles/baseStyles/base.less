@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+@import "baseValue";
+
+html,body,#app{
+  height: 100%;
+}
+
+.cfff{
+  color: #fff;
+}
+
+.c18{
+  color: @color18;
+}
+
+//清除a标签自带的样式
+a{
+  color: #000000;
+}
+
+//清除浮动
+.clearfloat:after{
+  content: '';
+  width: 0;
+  height: 0;
+  display: block;
+  clear: both;
+}
+
+//app底部公共导航
+.app-nav{
+  .tabbar-item{
+    color: #dedede61;
+  }
+}
+
+//社区模块的顶部导航
+.gam-nav{
+  .tabbar-item.active{
+    font-size: 18px;
+  }
+  .tabbar-item:last-child{
+    font-size: 30px;
+    line-height: 44px;
+    margin-bottom: 10px;
+  }
+
+}
